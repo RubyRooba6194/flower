@@ -1,0 +1,252 @@
+:root{
+  /*------------------------Font Family -------------------------*/
+  --ff-primary:"Roboto", sans-serif;
+  --ff-secondary:"Inter", sans-serif;
+  --ff-design: "satisfy",cursive;
+  --ff-brand:"Margarine", sans-serif;
+  /*------------------------colors-------------------------------------*/
+  --clr-white:#fff;
+  --clr-daRK:#333;
+  --clr-grey-1:#102a42;
+  --clr-grey2:#FBF8EF;
+  --clr-grey2:#f1f5f8;
+  --clr-primary:#f53b57;
+  --clr-primary-light:#f04660;
+  --clr-secoundary:#e9b949;
+  --transition: all 0.3s linear;
+}
+
+body{
+  background-image: url("../IMAGE/bg4.jpg");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.header{
+    cursor: pointer;
+    display: flex;
+    justify-content:space-between ;
+    height: 45px;
+    margin-left: 20px;
+    /*background-color: rgb(190, 160, 218);*/
+    
+}
+.sub-header{
+    margin: 15px;
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.sub-header1{
+display: flex;
+justify-content: center;
+width: 35%;
+gap: 15px;
+padding-top: 10px;
+font-weight: bold;
+
+}
+.sub-header1 button{
+  background-color:rgb(210, 66, 66);
+}
+
+.maincollegelogo{
+    display: flex;
+    justify-content: space-between;
+
+}
+.container-fluid{
+  background-image: url("../IMAGE/bg4.jpg");
+  
+}
+
+
+/*-----------------------college home image slider -----------------------*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  height: 50%;
+  padding: 20px;
+  float: left;
+  display: inline;    
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(16, 13, 13);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through*/ 
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #a19d9d;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 120s;
+}
+
+@keyframes fade {
+  from {opacity: .9}
+  to {opacity: 1}
+}
+/* -------------------- image slider ends -------------------*/
+.Latest{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;   
+
+}
+.container{
+    margin: 0;
+    width: 45%;
+    font-size: medium;
+    font-family: var(--ff-secondary);
+    
+}
+.events{
+    width: 50%;
+    flex-direction: row;
+    background-image: url("../IMAGE/bg4.jpg");
+    padding-left: 25px;
+    border-left: 6px solid brown;
+    font-family: var(--ff-secondary);
+    text-decoration: none;
+    
+
+}
+
+
+
+/*-------------------- about and college rounded image -----------------*/
+.footer{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutclg{
+    width: 50%;
+}
+
+.rounded-image img{
+    
+    padding-top: 50px;
+    border-radius: 50%;
+    display:flex;
+    justify-items: flex-end;
+}
+/* --------------why choose --------------------- */
+.whychoose{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding: 20px;
+}
+h1{
+  padding-left: 50px;
+}
+.hostel{
+  width: 15%;
+}
+.hostel img{
+  padding: 5px;
+  border-radius: 10px;
+}
+.Laboratory{
+  width: 15%;
+}
+.library{
+  width:15%
+}
+h4:hover{
+  color: #d11111;
+}
+/* ------------------ why choose closed---------------------- */
+/* ----------------final footer ------------------------- */
+
+footer{
+  
+  background-image: url("../IMAGE/bg4.jpg");
+}
+section{
+  padding: 5px;
+  color: brown;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}

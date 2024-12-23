@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*------------------------Font Family -------------------------*/
+    --ff-primary:"Roboto", sans-serif;
+    --ff-secondary:"Inter", sans-serif;
+    --ff-design: "satisfy",cursive;
+    --ff-brand:"Margarine", sans-serif;
+    /*------------------------colors-------------------------------------*/
+    --clr-white:#fff;
+    --clr-daRK:#333;
+    --clr-grey-1:#102a42;
+    --clr-grey2:#617d98;
+    --clr-grey2:#f1f5f8;
+    --clr-primary:#f53b57;
+    --clr-primary-light:#f04660;
+    --clr-secoundary:#e9b949;
+    --transition: all 0.3s linear;
+}
+/*-------------------Global CSS-----------*/
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 0.875rem;
+}
+p{
+    margin-bottom: 1.75rem;
+}
+body{
+    font-family: var(--ff-primary);
+    font-size: 0.876rem;
+    background-color: var(--clr-white);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+}
+
+
+/*----------------------Nav Bar------------------------*/
+.nav-btn svg{
+    position: fixed;
+    fill:var(--clr-primary);
+    top: 5%;
+    left:5%;
+    cursor: pointer;
+
+}
+/* #nav-check{
+    display: none; 
+    
+} */
+#nav-check:checked ~ .navbar{
+    transform: translateX(0);
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgba(0,0,0,9);
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: var(--transition);
+
+}
+.navbar h3{
+    color: transparent;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    background-image: linear-gradient(180deg, var(--clr-primary)25%,var(--clr-secoundary));
+    background-clip: text;
+    margin-bottom: -1rem;
+
+
+}
+.navbar-header img{
+    width: 100px;
+    margin: 0 auto;
+}
+.navbar-header{
+    position: relative;
+}
+.navclose{
+position: absolute;
+top: 5px;
+}
+.navclose svg{
+    cursor: pointer;
+    fill: var(--clr-daRK);
+    transition: var(--transition);
+}
+.navclose:hover svg{
+    fill: var(--clr-white);
+}
+.navbar-items{
+    list-style-type: none;
+}
+.nav-links{
+display: block;
+color: var(--clr-white);
+text-transform: uppercase;
+font-size: medium;
+font-family: var(--ff-secondary);
+padding: 10px;
+letter-spacing: 0.5px;
+}
+.nav-links:hover{
+    background-color: var(--clr-primary-light);
+    padding-left: 20px;
+    border-left: 7px solid var(--clr-secoundary);
+}
+@media screen  and(min-width:768){
+    .navbar{
+        width: 35%;
+        max-width: 25rem;
+    }
+}
